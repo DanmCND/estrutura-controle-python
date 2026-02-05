@@ -51,15 +51,15 @@ else:
 
 '''#estrutura match case para definir a ação do jogador'''
 #entrada de dados para a ação do jogador
-action_player = input("Qual ação deseja realizar ?\n[A] Atacar\n[D] Defender\n[F] Fugir\n Vamos la: ")
+action_player = input("Qual ação deseja realizar ?\n[A] Atacar\n[D] Defender\n[F] Fugir\n Vamos la: ").upper()
 
 #estrutura match case para definir a ação do jogador
 match action_player:
-    case "A" | "a" | "Atacar" | "atacar":
+    case "A":
         print(f"{player_name} avançou para o ataque!")
-    case "D" | "d" | "Defender" | "defender":
+    case "D":
         print(f"{player_name} levantou o escudo!")
-    case "F" | "f" | "Fugir" | "fugir":
+    case "F":
         print(f"{player_name} fugiu da batalha!")
     case _:
         print("Ação inválida")
