@@ -50,4 +50,3 @@ match action:
         print(f"{player_name} fugiu da batalha!")
     case _:
         print("Ação inválida")
-
