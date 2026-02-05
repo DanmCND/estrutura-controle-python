@@ -1,5 +1,6 @@
 '''
-Você foi contratado para criar um menu interativo de atendimento para uma empresa fictícia. O sistema deve exibir as opções abaixo e, de acordo com o número digitado, apresentar uma resposta:
+Você foi contratado para criar um menu interativo de atendimento para uma empresa fictícia.
+O sistema deve exibir as opções abaixo e, de acordo com o número digitado, apresentar uma resposta:
  
 Opções do menu:
 [1] Falar com atendente
@@ -34,15 +35,21 @@ option = input("Digite o número da opção desejada: ")
 match option:
     case "1" | "Falar com atendente":
         print("Conectando você a uma atendente...")
+        print("Aguarde um instante, por favor.")
 
     case "2" | "Segunda via de boleto":
-        print("Gerando segunda via do boleto...")
+        print("Boleto gerado com sucesso! Verifique seu e-mail.")
 
     case "3" | "Cancelar serviço":
-        print("insira o motivo do cancelamento do serviço...")
+        cancel = input("Insira o motivo do cancelamento do serviço: ")
+        print(f"Seu serviço foi cancelado por: {cancel}. Lamentamos sua decisão.")
 
     case "4" | "Informações sobre planos":
-        print("Nossos planos disponíveis são: Básico, Premium e Família.")
+        print("Nossos planos disponíveis são:")
+        print("- Básico")
+        print("- Premium")
+        print("- Família")
+        
 
     case "5" | "Sair":
         print("obrigado por ultilizar nossos serviços.")
